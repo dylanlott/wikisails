@@ -9,17 +9,17 @@ module.exports = {
 
   attributes: {
 
-    title : { type: 'String' },
+    title : { type: 'string' },
 
     date : { type: 'Date', default: Date.now},
 
-    author : { type: 'String,' },
+    author : { type: 'string,' },
 
-    tags, : { type: 'String' },
+    tags, : { type: 'string' },
 
-    user, : { type: 'String' },
+    user, : { type: 'string' },
 
-    citations : { type: 'String' }
+    citations : { type: 'string' }
   }
 };
 
