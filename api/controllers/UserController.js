@@ -24,6 +24,19 @@ module.exports = {
 
 	update: function(){
 		
+	},
+
+	login: function (req, res) {
+	  return res.login({
+	    successRedirect: '/'
+	  });
+	},
+
+	logout: function (req, res) {
+	  req.logout();
+	  return res.ok('Logged out successfully.');
 	}
+
+
 };
 
