@@ -9,15 +9,15 @@ module.exports = {
 
   attributes: {
 
-    username, : { type: 'String', required: true },
+    username : { type: 'String', required: true },
 
-    password, : { type: 'String', required: true },
+    password : { type: 'String', required: true },
 
-    dateJoined, : { type: 'Date', default: Date.now },
+    dateJoined : { type: 'Date', default: Date.now },
 
     articles : [{ type: String }],
 
-    role : [{ type: 'String', enum:['superuser', 'admin', 'editor', 'user'] }]
+    role : [{ type: 'String', enum:['superuser', 'admin', 'editor', 'user'], required: true}]
   }
 };
 
